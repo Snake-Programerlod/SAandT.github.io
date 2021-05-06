@@ -1,20 +1,17 @@
 # PS4JB
 
-This is an Offline full chain exploit for PS4 firmware 6.72, 7.02 & 7.55 with 100% Success Rate.
+This is an Offline full chain exploit for PS4 firmware 7.55.
 
 ## Steps
 
 * Delete Cookies and Clear Website Data
-* Open the Exploit Page https://darkmoddervc.github.io/PS4JB/
-* The Exploit gets cached. Turn off the Internet and Open the page and run the Jailbreak (Old Exploit/New Exploit)
-* Run HEN/MIRA after Jailbreak is complete
-* Once Payload loaded successfully, Open the Game
+* Open the Exploit Page https://SAandT.github.io/PS4JB/
 
 Note: If you face crashes, Unplug your PS4, Click power button few times and then connect it back and Power on.
 
 ## YouTube Channel
 
-https://www.youtube.com/channel/UCqP2nrYaECNZWfp7k4gbRBg
+https://www.youtube.com/c/SAandT?sub_confirmation=1
 
 ## Credits
 
@@ -24,4 +21,4 @@ https://www.youtube.com/channel/UCqP2nrYaECNZWfp7k4gbRBg
 
 ## Donate Me
 
-https://www.paypal.me/darkmodder
+https://paypal.me/SAandTMauricio?loca
