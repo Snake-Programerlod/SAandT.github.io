@@ -1,16 +1,15 @@
-# PS4JB
+# DISCLAIMER
 
-This is an Offline full chain exploit for PS4 firmware 6.72, 7.02 & 7.55 with 100% Success Rate.
+Este proyecto esta hecho con propositos educativos, el uso de esta pagina es responsabilidad de quien la utiliza.
 
-## Steps
+# PS4-JB
 
-* Delete Cookies and Clear Website Data
-* Open the Exploit Page https://darkmoddervc.github.io/PS4JB/
-* The Exploit gets cached. Turn off the Internet and Open the page and run the Jailbreak (Old Exploit/New Exploit)
-* Run HEN/MIRA after Jailbreak is complete
-* Once Payload loaded successfully, Open the Game
+Esta pagina es compatible unicamente y por el momento con la version 755 (versiones anteriores seran agregadas, posteriormente)
 
-Note: If you face crashes, Unplug your PS4, Click power button few times and then connect it back and Power on.
+## Pasos
+
+* Borrar Cookies, y datos de navegacion
+* Abrir la pagina https://snake-programerlod.github.io/SAandT.github.io/
 
 ## YouTube Channel
 
@@ -18,10 +17,9 @@ https://www.youtube.com/channel/UCqP2nrYaECNZWfp7k4gbRBg
 
 ## Credits
 
-* [Fire30](https://github.com/Fire30/bad_hoist) for the WebKit exploit
 * [TheFlow](https://hackerone.com/reports/826026) for the kernel exploit
-* [sleirsgoevy](https://github.com/sleirsgoevy/ps4jb) for the PS4 6.72 JB
+* [sleirsgoevy](https://github.com/sleirsgoevy/ps4jb) for the PS4 7,55 JB
 
-## Donate Me
+## Donaciones
 
-https://www.paypal.me/darkmodder
+https://paypal.me/SAandTMauricio?loca...
