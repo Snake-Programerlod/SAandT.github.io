@@ -55,9 +55,9 @@
   window.onload = function(e){if(localStorage.Fail==null){localStorage.Fail=0;localStorage.Success=0;}
   document.getElementById("success").innerHTML="Success: "+localStorage.Success;
   document.getElementById("fail").innerHTML="Fail: "+localStorage.Fail;}
-  window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!"};
-  window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML="Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed"};
-  window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page to Run the Exploit!!"; }, 1500);};
+  window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="¡Se inició el almacenamiento en caché de la página!"};
+  window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML="Estado de almacenamiento en caché: "+(Math.round(100*(a.loaded/a.total)))+"% Completado"};
+  window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="¡Página almacenada en caché con éxito!";setTimeout(function(){document.getElementById("progress").innerHTML="¡Apague Internet y vuelva a abrir la página para ejecutar el exploit!"; }, 1500);};
 </script>
 <script src="common/functions.js"></script>
 <script>function print(){}</script>
