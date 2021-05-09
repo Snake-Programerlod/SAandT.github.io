@@ -1,7 +1,7 @@
 <html manifest="offlineCache.manifest">
 	<style>
 		.button {
-		  background-color: #007bff;  
+		  background-color: #003263;  
 		  border-radius: 5px;
 		  color: white;
 		  padding: .5em;
@@ -13,12 +13,12 @@
 
 		.button:focus,
 		.button:hover {
-		  background-color: #003263;
+		  background-color: #007bff;
 		  color: White;
 		}
 
 		.titlehead {
-		  background-color: #007bff;  
+		  background-color: #003263;  
 		  border-radius: 5px;
 		  color: white;
 		  padding: .5em;
@@ -31,24 +31,18 @@
 
 		.titlehead:focus,
 		.titlehead:hover {
-		  background-color: #003263;
+		  background-color: #007bff;
 		  color: White;
 		}
 
 		.bg {
+		  
 		  background-image: url("ps4.jpg");
 		  font-family: system-ui;
+		  
 		  background-position: center;
 		  background-repeat: no-repeat;
 		  background-size: cover;
-		}
-
-		.glass {
-			background-size: cover;
-			opacity: 0.3;
-			background-color: #0430ad;
-			color: white;
-			font-weight: bold
 		}
 
 		#myProgress {
@@ -58,8 +52,8 @@
 		  height: 45px;
 		  position: absolute;
 		  top:0;
-		  bottom: -500;
-		  left: 350;
+		  bottom: 250;
+		  left: 150;
 		  right: 150;
 		  margin: auto;
 		}
@@ -67,10 +61,10 @@
 		#myBar {
 		  width: 0%;
 		  height: 40px;
-		  background-color: #2196f3;
+		  background-color: #4CAF50;
 		  text-align: center;
 		  line-height: 30px;
-		  color: #003263;
+		  color: white;
 		  font-size: 35px;
 		  padding-top: 5px;
 		}
@@ -138,7 +132,7 @@
 		  transform: translateX(26px);
 		}
 
-		/* Rounded sliders */
+		
 		.slider.round {
 		  border-radius: 34px;
 		}
@@ -149,7 +143,7 @@
 
 	</style>
 	<head>
-		<title>PS4 Xploit para Firmware 7.55</title>
+		<title>PS4 Jailbreak 7.5X 'Based On ModderVc Host'</title>
 	</head>
 	<body onload="go()" class="bg">
 		<script>
@@ -157,9 +151,9 @@
 			if(localStorage.autoExploit==null){localStorage.autoExploit=false;}
 			var fw = (navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'))).replace('.', '');;
 			if(window.applicationCache.status==2){localStorage.is75XV2Cached=true;}
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="¡Se inició el almacenamiento en caché de la página!";localStorage.is75XV2Cached=false;};
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";localStorage.is75XV2Cached=false;};
 			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="¡Página almacenada en caché con éxito!";localStorage.is75XV2Cached=true;setTimeout(function(){document.getElementById("progress").innerHTML="¡Apague Internet y vuelva a abrir la página para ejecutar el exploit!"; }, 1500);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";localStorage.is75XV2Cached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page to Run the Exploit!!"; }, 1500);};
 		</script>
 		<script>
 			var width = 0;
@@ -197,74 +191,62 @@
 			document.getElementById("myProgress").remove();
 			if(document.getElementById("progress").innerHTML.includes("Failed")){
 				document.getElementById('load').innerHTML='<tr style="color:white;">'+
-					'<td id="aexp" colspan="2" align="right" style="width: 12%;font-family: system-ui;font-size: 20px;">Exploit Automatico &nbsp;</td>'+
+					'<td id="aexp" colspan="2" align="right" style="width: 12%;font-family: system-ui;font-size: 20px;">Autoload Exploit &nbsp;</td>'+
 					'<td style="width: 10%;"><label class="switch"><input id="tog1" onclick="if(document.getElementById(\'tog1\').checked){document.getElementById(\'toggleExploit\').style.display=\'table-row\';localStorage.autoExploit=true;}else{document.getElementById(\'toggleExploit\').style.display=\'none\';localStorage.autoExploit=false;}" type="checkbox"><span class="slider new round"></span></label></td>'+
 					'</tr>'+
 					'<tr><td><br/></td></tr>'+
 					'<tr id="toggleExploit" style="color:white;">'+
-					'<td id="oexp" align="right" style="color:#585858; width: 45%;font-family: system-ui;font-size: 20px;">Precargar Exploit Anterior &nbsp;</td>'+
+					'<td id="oexp" align="right" style="color:#585858; width: 45%;font-family: system-ui;font-size: 20px;">Preload Old Exploit &nbsp;</td>'+
 					'<td style="width: 10%;"><label class="switch"><input checked id="tog" onclick="if(document.getElementById(\'tog\').checked){document.getElementById(\'oexp\').style.color=\'#585858\';document.getElementById(\'nexp\').style.color=\'white\';localStorage.jb=\'jb.js\';}else{document.getElementById(\'nexp\').style.color=\'#585858\';document.getElementById(\'oexp\').style.color=\'white\';localStorage.jb=\'oldjb.js\';}" type="checkbox"><span class="slider round"></span></label></td>'+
-					'<td id="nexp" align="left" style="width: 45%;font-family: system-ui;font-size: 20px;">&nbsp; Preload New Exploit</td>'+
+					'<td id="nexp" align="left" style="width: 45%;font-family: system-ui;font-size: 20px;">&nbsp; Preload New Exploit April 29, 2021</td>'+
 					'</tr>';
 				if(localStorage.autoExploit=="true"){document.getElementById('tog1').checked=true;document.getElementById('toggleExploit').style.display='table-row';}else{document.getElementById('tog1').checked=false;document.getElementById('toggleExploit').style.display='none';}
 			}else{
-				document.getElementById('load').innerHTML='<tr style="color:white;display:none;">'+
-					'<td id="aexp" colspan="2" align="right" style="width: 12%;font-family: system-ui;font-size: 20px;display:none;">Exploit Automatico &nbsp;</td>'+
+				document.getElementById('load').innerHTML='<tr style="color:white;">'+
+					'<td id="aexp" colspan="2" align="right" style="width: 12%;font-family: system-ui;font-size: 20px;">Autoload Exploit &nbsp;</td>'+
 					'<td style="width: 10%;"><label class="switch"><input id="tog1" onclick="if(document.getElementById(\'tog1\').checked){document.getElementById(\'toggleExploit\').style.display=\'table-row\';document.getElementById(\'mexp\').style.display=\'none\';localStorage.autoExploit=true;}else{document.getElementById(\'toggleExploit\').style.display=\'none\';document.getElementById(\'mexp\').style.display=\'table-row\';localStorage.autoExploit=false;}" type="checkbox"><span class="slider new round"></span></label></td>'+
 					'</tr>'+
 					'<tr><td><br/></td></tr>'+
 					'<tr id="toggleExploit" style="color:white;">'+
-					'<td id="oexp" align="right" style="color:#585858; width: 45%;font-family: system-ui;font-size: 20px;display:none;">Precargar Exploit Anterior &nbsp;</td>'+
-					'<td style="width: 10%;display:none;"><label class="switch"><input checked id="tog" onclick="if(document.getElementById(\'tog\').checked){document.getElementById(\'oexp\').style.color=\'#585858\';document.getElementById(\'nexp\').style.color=\'white\';localStorage.jb=\'jb.js\';}else{document.getElementById(\'nexp\').style.color=\'#585858\';document.getElementById(\'oexp\').style.color=\'white\';localStorage.jb=\'oldjb.js\';}" type="checkbox"><span class="slider round"></span></label></td>'+
-					'<td id="nexp" align="left" style="width: 45%;font-family: system-ui;font-size: 20px;">&nbsp; Precargar Exploit Actual</td>'+
+					'<td id="oexp" align="right" style="color:#585858; width: 45%;font-family: system-ui;font-size: 20px;">Preload Old Exploit &nbsp;</td>'+
+					'<td style="width: 10%;"><label class="switch"><input checked id="tog" onclick="if(document.getElementById(\'tog\').checked){document.getElementById(\'oexp\').style.color=\'#585858\';document.getElementById(\'nexp\').style.color=\'white\';localStorage.jb=\'jb.js\';}else{document.getElementById(\'nexp\').style.color=\'#585858\';document.getElementById(\'oexp\').style.color=\'white\';localStorage.jb=\'oldjb.js\';}" type="checkbox"><span class="slider round"></span></label></td>'+
+					'<td id="nexp" align="left" style="width: 45%;font-family: system-ui;font-size: 20px;">&nbsp; Preload New Exploit April 29, 2021</td>'+
 					'</tr>'+
 					'<tr id="mexp">'+
-					'<td align="center" colspan="3"><a href="#" id="exploit_old" class="button" onclick="toggle_payload(\'exploit_old\'); return false" style="width:44.5%">Ejecutar Exploit</a>&nbsp;'+
-					'<a href="#" id="exploit" class="button" onclick="toggle_payload(\'exploit\'); return false" style="width:44.5%;">Ejecutar Exploit Actual</a>&nbsp;</td>'+
+					'<td align="center" colspan="3"><a href="#" id="exploit_old" class="button" onclick="toggle_payload(\'exploit_old\'); return false" style="width:44.5%">Old Exploit</a>&nbsp;'+
+					'<a href="#" id="exploit" class="button" onclick="toggle_payload(\'exploit\'); return false" style="width:44.5%">New Exploit April 29, 2021</a>&nbsp;</td>'+
 					'</tr>'+
 					'<tr><td><br/></td></tr>'+
 					'<tr>'+
 					'<td align="center" colspan="3" >'+
-					'<a href="#" id="mira75X" class="button" onclick="toggle_payload(\'mira75X\'); return false" style="width:29%">MIRA 7.5X</a>&nbsp;'+
 					'<a href="#" id="goldhenold" class="button" onclick="toggle_payload(\'goldhenold\'); return false" style="width:29%">GoldHEN V1.0</a>&nbsp;'+
 					'<a href="#" id="goldhen" class="button" onclick="toggle_payload(\'goldhen\'); return false" style="width:29%">GoldHEN V1.1</a>&nbsp;'+
+					'<a href="#" id="hen213b" class="button" onclick="toggle_payload(\'hen213b\'); return false" style="width:29%">HEN 2.1.3b</a>&nbsp;'+
 					'</td>'+
 					'</tr>'+
 					'<tr><td><br/></td></tr>'+
 					'<tr>'+
-					'<td colspan="3" class="glass" align="center"><hr><p>Cargas Utiles</p><hr></td>'+
+					'<td colspan="3" align="center"><hr><br></td>'+
 					'</tr>'+
 					'<tr>'+
 					'<td align="center" colspan="3"><a href="#" id="app2usb" class="button" onclick="toggle_payload(\'app2usb\'); return false" style="width:29%">App2USB</a>&nbsp;'+
 					'<a href="#" id="binloader" class="button" onclick="toggle_payload(\'binloader\'); return false" style="width:29%">Bin Loader</a>&nbsp;'+
-					'<a href="#" id="ps4debug" class="button" onclick="toggle_payload(\'ps4debug\'); return false" style="width:29%">PS4Debug</a>&nbsp;</td>'+
-					'</tr><tr><td><br/></td></tr>'+
-					'<tr>'+
-					'<td align="center" colspan="3"><a href="#" id="disableupdates" class="button" onclick="toggle_payload(\'disableupdates\'); return false" style="width:29%">Disable Updates</a>&nbsp;'+
-					'<a href="#" id="enableupdates" class="button" onclick="toggle_payload(\'enableupdates\'); return false" style="width:29%">Enable Updates</a>&nbsp;'+
 					'<a href="#" id="ftp" class="button" onclick="toggle_payload(\'ftp\'); return false" style="width:29%">FTP</a>&nbsp;</td>'+
 					'</tr><tr><td><br/></td></tr>'+
 					'<tr>'+
-					'<td align="center" colspan="3"><a href="#" id="dumper" class="button" onclick="toggle_payload(\'dumper\'); return false" style="width:29%">Dumper</a>&nbsp;'+
-					'<a href="#" id="exitidu" class="button" onclick="toggle_payload(\'exitidu\'); return false" style="width:29%">Exit IDU</a>&nbsp;'+
-					'<a href="#" id="enablebrowser" class="button" onclick="toggle_payload(\'enablebrowser\'); return false" style="width:29%">Enable Browser</a>&nbsp;</td>'+
+					'<td align="center" colspan="3"><a href="#" id="enableupdates" class="button" onclick="toggle_payload(\'enableupdates\'); return false" style="width:29%">Enable Updates</a>&nbsp;'+
+					'<a href="#" id="disableupdates" class="button" onclick="toggle_payload(\'disableupdates\'); return false" style="width:29%">Disable Updates</a>&nbsp;'+
+					'<a href="#" id="historyblocker" class="button" onclick="toggle_payload(\'historyblocker\'); return false" style="width:29%">History Blocker</a>&nbsp;</td>'+
+					'</tr><tr><td><br/></td></tr>'+
+					'<tr>'+
+					'<td align="center" colspan="3"><a href="#" id="backup" class="button" onclick="toggle_payload(\'backup\'); return false" style="width:29%">Backup</a>&nbsp;'+
+					'<a href="#" id="restore" class="button" onclick="toggle_payload(\'restore\'); return false" style="width:29%">Restore</a>&nbsp;'+
+					'<a href="#" id="fancontrol" class="button" onclick="toggle_payload(\'fancontrol\'); return false" style="width:29%">Fan Control</a>&nbsp;</td>'+
 					'</tr><tr><td><br/></td></tr>'+
 					'<tr>'+
 					'<tr>'+
 					'<td align="center" colspan="3">'+
-					'<a href="#" id="backup" class="button" onclick="toggle_payload(\'backup\'); return false" style="width:29%">Backup</a>&nbsp;'+
-					'<a href="#" id="restore" class="button" onclick="toggle_payload(\'restore\'); return false" style="width:29%">Restore</a>&nbsp;'+
-					'<a href="#" id="historyblocker" class="button" onclick="toggle_payload(\'historyblocker\'); return false" style="width:29%">History Blocker</a>&nbsp;</td>'+
-					'</tr><tr><td><br/></td></tr>'+
-					'<tr>'+
-					'<td align="center" colspan="3"><a href="#" id="renamer" class="button" onclick="toggle_payload(\'rifrenamer\'); return false" style="width:29%">Rif Renamer</a>&nbsp;'+
-					'<a href="#" id="todex" class="button" onclick="toggle_payload(\'todex\'); return false" style="width:29%">To-Dex</a>&nbsp;'+
-					'<a href="#" id="disableaslr" class="button" onclick="toggle_payload(\'disableaslr\'); return false" style="width:29%">Disable ASLR</a>&nbsp;</td>'+
-					'</tr><tr><td><br/></td></tr>'+
-					'<tr>'+
-					'<td align="center" colspan="3"><a href="#" id="kerneldumper" class="button" onclick="toggle_payload(\'kerneldumper\'); return false" style="width:29%">Kernel Dumper</a>&nbsp;'+
 					'<a href="#" id="webrte" class="button" onclick="toggle_payload(\'webrte\'); return false" style="width:29%">WebRTE</a>&nbsp;'+
-					'<a href="#" id="fancontrol" class="button" onclick="toggle_payload(\'fancontrol\'); return false" style="width:29%">Fan Control</a>&nbsp;</td>'+
 					'</tr>';
 				if(localStorage.autoExploit=="true"){document.getElementById('tog1').checked=true;document.getElementById('toggleExploit').style.display='table-row';document.getElementById('mexp').style.display='none';}else{document.getElementById('tog1').checked=false;document.getElementById('toggleExploit').style.display='none';document.getElementById('mexp').style.display='table-row';}
 			}
@@ -294,7 +276,7 @@
 			setTimeout(function()
 			{	
 				eval.call(window, scriptCode);
-				//done();
+				
 			}, 100);
 
 		};
@@ -303,7 +285,7 @@
 		<script src="./webkit/utils.js"></script>
 		<script src="./webkit/int64.js"></script>
 		<script src="./webkit/ps4.js"></script>
-		<h1 id="progress" class="titlehead">Cargando.. Espere por favor !!</h1><hr><br>
+		<h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><hr><br>
 		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
 		<button style="opacity:0" id="input2"></button>
 		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
