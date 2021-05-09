@@ -1,6 +1,7 @@
 CACHE MANIFEST
-# v1.0 : 16-03-2021
- 
+# random: b2e867e7f4b1aece351e3a409e9f358a
+
+CACHE: 
 index.html
 ps4.jpg
 webkit/utils.js
@@ -27,3 +28,6 @@ payloads/goldhen751.js
 payloads/goldhen755.js
 payloads/hen213b.js
 payloads/webrte.js
+
+NETWORK:
+*
