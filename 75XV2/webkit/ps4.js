@@ -129,87 +129,87 @@ function setupRW() {
 
 function toggle_payload(pld){
 	if(pld == "exploit"){
-		document.getElementById("progress").innerHTML="Running Jailbreak.. Please wait!!";
+		document.getElementById("progress").innerHTML="Intentando Liberar PS4.. Espere por favor!!";
 		preloadScripts(['jb/jb.js']);
 	}else if(pld == "exploit_old"){
-		document.getElementById("progress").innerHTML="Running Jailbreak.. Please wait!!";
+		document.getElementById("progress").innerHTML="Intentando Liberar PS4.. Espere por favor!!";
 		preloadScripts(['jb/oldjb.js']);
 	}else if(pld == "binloader"){
-		document.getElementById("progress").innerHTML="Awaiting Payload.. Send Payload to port 9020..";
+		document.getElementById("progress").innerHTML="Esperando Payload.. Enviando Payload a el puerto 9020..";
 		preloadScripts(['payloads/preloader.js', 'payloads/loader.js']);
 	}else if(pld == "mira75X"){
-		document.getElementById("progress").innerHTML="Loading MIRA.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando MIRA.. Espere por favor..";
 		if(fw=="755"){
 			preloadScripts(['payloads/preloader.js', 'payloads/mira'+fw+'.js', 'payloads/loader.js']);
 		}else{
 			preloadScripts(['payloads/preloader'+fw+'.js', 'payloads/mira'+fw+'.js', 'payloads/loader.js']);	
 		}
 	}else if(pld == "mira2b"){
-		document.getElementById("progress").innerHTML="Loading MIRA + SPOOF.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando MIRA + SPOOF.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/mira2b.js', 'payloads/loader.js']);
 	}else if(pld == "ftp"){
-		setTimeout(function(){document.getElementById("progress").innerHTML="FTP Loaded.. Access at port 1337.."; }, 7000);
+		setTimeout(function(){document.getElementById("progress").innerHTML="FTP cargado.. Acceso por el puerto 1337.."; }, 7000);
 		preloadScripts(['payloads/preloader.js', 'payloads/ftp.js', 'payloads/loader.js']);
 	}else if(pld == "app2usb"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/app2usb.js', 'payloads/loader.js']);
 	}else if(pld == "disableupdates"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/disableupdates.js', 'payloads/loader.js']);
 	}else if(pld == "enableupdates"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/enableupdates.js', 'payloads/loader.js']);
 	}else if(pld == "backup"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/backup.js', 'payloads/loader.js']);
 	}else if(pld == "restore"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/restore.js', 'payloads/loader.js']);
 	}else if(pld == "rifrenamer"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/rifrenamer.js', 'payloads/loader.js']);
 	}else if(pld == "todex"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/todex.js', 'payloads/loader.js']);
 	}else if(pld == "dumper"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/dumper.js', 'payloads/loader.js']);
 	}else if(pld == "disableaslr"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/disableaslr.js', 'payloads/loader.js']);
 	}else if(pld == "kerneldumper"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/kerneldumper.js', 'payloads/loader.js']);
 	}else if(pld == "kernelclock"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/kernelclock.js', 'payloads/loader.js']);
 	}else if(pld == "fancontrol"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/fancontrol.js', 'payloads/loader.js']);
 	}else if(pld == "enablebrowser"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/enablebrowser.js', 'payloads/loader.js']);
 	}else if(pld == "historyblocker"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/historyblocker.js', 'payloads/loader.js']);
 	}else if(pld == "exitidu"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/exitidu.js', 'payloads/loader.js']);
 	}else if(pld == "ps4debug"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/ps4debug.js', 'payloads/loader.js']);
 	}else if(pld == "goldhen"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		if(fw=="755"){
 			preloadScripts(['payloads/preloader.js', 'payloads/goldhen'+fw+'.js', 'payloads/loader.js']);
 		}else{
 			preloadScripts(['payloads/preloader'+fw+'.js', 'payloads/goldhen'+fw+'.js', 'payloads/loader.js']);	
 		}
 	}else if(pld == "goldhenold"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/goldhen.js', 'payloads/loader.js']);
 	}else if(pld == "webrte"){
-		document.getElementById("progress").innerHTML="Loading Payload.. Please wait..";
+		document.getElementById("progress").innerHTML="Cargando Payload.. Espere por favor..";
 		preloadScripts(['payloads/preloader.js', 'payloads/webrte.js', 'payloads/loader.js']);
 	}
 	if(window.postPayload)
@@ -221,9 +221,9 @@ function toggle_payload(pld){
 function payload_finished(payload)
 {
 	if(payload == "binloader"){
-		setTimeout(function(){document.getElementById("progress").innerHTML="Awaiting Payload!! Send Payload To Port 9021"; }, 7000);
+		setTimeout(function(){document.getElementById("progress").innerHTML="En espera de Payload!! Lanzando Payload a el Puerto 9021"; }, 7000);
 	} else if(payload != "exploit" && payload != "exploit_old"){
-		setTimeout(function(){document.getElementById("progress").innerHTML="PS4 Jailbreak 7.55 Payload Loaded Succesfully !!"; }, 7000);
+		setTimeout(function(){document.getElementById("progress").innerHTML="PS4 7.55 Payload cargado exitosamente !!"; }, 7000);
 	}
 }
 
