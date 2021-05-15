@@ -13,7 +13,7 @@ button img{
           width:100%;
 }
 
-		.bg {
+.bg {
 		  background-image: url("img.jpg");
 		  font-family: system-ui;
 		  background-position: center;
@@ -21,8 +21,24 @@ button img{
 		  background-size: cover;
 		}
 
+.mybutton{
+  color: white;
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer !important;
+}
 
-
+.mybutton:hover{
+  color:#555555;
+  background-color:white;
+}
 
 
  
