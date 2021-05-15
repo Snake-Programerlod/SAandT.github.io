@@ -50,7 +50,7 @@ mymenu.style.display="block";
 	}, 100);
 };
 </script>
-<div id=mymenu style="text-align:center;display:none">
+<div id=mymenu style="text-align:center;">
 <div style="display:none;" text-align= center>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
 <div style="width:100%;font-size:20px;color:white">
 Firmware <span id="PS4fw"></span></div>
@@ -142,19 +142,19 @@ if (localStorage.failcount == null) localStorage.failcount=0;
 window.failCounter.innerHTML=localStorage.failcount;
 
 function load_exploit_new(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading New Exploit Please Wait ...</h1>";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Cargando Exploit, espere por favor...</h1>";
 function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
 function loadScript(){getScript("exp_jailbreak_new.js",function(){setTimeout(jailbreak,000);});}loadScript();
 }
 
 function exploit(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Exploit Please Wait ...</h1>";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Cargando Exploit, espere por favor...</h1>";
 function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
 function loadScript(){getScript("exp_jailbreak.js",function(){setTimeout(jailbreak,000);});}loadScript();
 }
 
 function load_exploit_old(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading old Exploit Please Wait ...</h1>";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Cargando Exploit, espere por favor...</h1>";
 function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
 function loadScript(){getScript("exp_jailbreak_old.js",function(){setTimeout(jailbreak,500);});}loadScript();
 }
