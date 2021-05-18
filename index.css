@@ -150,3 +150,7 @@ div a:hover span.bg {
 div a:hover span.text:after {
   background: #ece8e1;
 }
+
+td {
+  width: 250px;
+}
