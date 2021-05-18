@@ -34,7 +34,6 @@ div a {
   width: 240px;
   max-width: 240px;
   height: 54px;
-  padding: 8px;
   font-size: 0.8rem;
   font-weight: 900;
   color: #ff4655;
@@ -153,4 +152,5 @@ div a:hover span.text:after {
 
 td {
   width: 250px;
+  padding:7px;
 }
