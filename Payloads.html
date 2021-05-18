@@ -1,106 +1,15 @@
-<html manifest="offlinexmb.cache">
+<html>
 <head>
-<title>LIBERACION PS4 - Exploit para 755</title>
+<title>CARGAS UTILES</title>
 <link rel="stylesheet" href="index.css">
-<script>
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Instalando host en el cache: " + Percent + "%"};
-function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Instalado exitosamente";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.msgs.innerHTML="Cierre el navegador, apague su conexion a internet y abra nuevamente esta pagina";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
-</script>
-<body style="color:white;font-size:20px;text-align:center;" onload="go();" class="bg">
+<body style="color:white;font-size:20px;text-align:center;" class="bg">
 <h1 id=msgs style='font-size:25px;text-align:center;color:white'>Menu para Exploit 7.55</h1>
 <div id=dlog></div>
-<button style=opacity:0 id="input1" onfocus="handle2()"></button>
-<button style=opacity:0 id="input2"></button>
-<button style=opacity:0 id="input3" onfocus="handle2()"></button>
-<select style=opacity:0 id="select1">
-<option value="value1">Value1</option>
-</select>
 <script src="utils.js"></script>
 <script src="int64.js"></script>
 <script src="ps4.js"></script>
-<script>
-function print(){}
-
-var scriptCode = '';
-
-function preloadScripts(lst){
-for(var i=0;i<lst.length;i++){var xhr=new XMLHttpRequest();xhr.open('GET',lst[i],false);xhr.send('');scriptCode+=xhr.responseText+'\n';}
-}
-
-function done(){
-    if(main_ret == 0 || main_ret == 179)
-    {
-        //alert("You're all set!");
-    }
-    else
-        alert("Liberacion fallida! Reinicie su PS4 e intente nuevamente");
-}
-
-window.midExploit = function(){
-preloadScripts(['blob.js'], go);
-}
-
-window.postExploit = function(){
-dlog.remove();
-mymenu.style.display="block";
-    setTimeout(function()
-	{
-	eval.call(window, scriptCode);
-	done();
-	}, 100);
-};
-</script>
-<div id=mymenu style="text-align:center;display: none;">
-<div text-align= center>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
-<div style="width:100%;font-size:20px;color:white">
-Firmware <span id="PS4fw"></span></div>
+<div id=mymenu style="text-align:center;">
 <div style='margin-bottom:50px;'></div>
-
-<h3 style="color: white;display: flex;justify-content: center;">Exploits</h3>
-	<div style="display:flex;justify-content: center;">
-		<table>
-			<tr>
-				<td>
-					<a class="transparent" href="#" onclick="load_exploit_new(); return false">
-						<p><span class="bg"></span><span class="base"></span><span class="text">Actualizado</span></p>
-					</a>
-				</td>
-				<td>
-					<a class="transparent" href="#" onclick="load_exploit_old(); return false">
-						<p><span class="bg"></span><span class="base"></span><span class="text">Inicial</span></p>
-					</a>
-				</td>
-			</tr>
-		</table>
-	</div>
-<hr>
-<h3 style="color: white;display: flex;justify-content: center;">Activadores</h3>
-<div style="display:flex;justify-content: center;">
-	<table>
-		<tr>
-			<td>
-				<a class="transparent" href="#" onclick="load_goldhen(); return false">
-					<p><span class="bg"></span><span class="base"></span><span class="text">GoldHen - v1.0</span></p>
-				</a>
-			</td>
-			<td>
-				<a class="transparent" href="#" onclick="load_goldhenb(); return false">
-					<p><span class="bg"></span><span class="base"></span><span class="text">GoldHen - v1.1</span></p>
-				</a>
-			</td>
-			<td>
-				<a class="transparent" href="#" onclick="load_hen(); return false">
-					<p><span class="bg"></span><span class="base"></span><span class="text">HenB - v2.1.3</span></p>
-				</a>
-			</td>
-			<td>
-				<a class="transparent" href="#" onclick="load_mira(); return false">
-					<p><span class="bg"></span><span class="base"></span><span class="text">Mira2B + Spoof V9.99</span></p>
-				</a>
-			</td>
-		</tr>
-	</table>
-</div>
 <hr>
 <h3 style="color: white;display: flex;justify-content: center;">Cargas Utiles</h3>
 <div style="display:flex;justify-content: center;">
